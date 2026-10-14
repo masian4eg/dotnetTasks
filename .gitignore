@@ -1,0 +1,7 @@
+bin/
+obj/
+.sdk/
+dotnet-sdk.zip
+TestResults/
+.vs/
+.sdk-home/
