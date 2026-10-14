@@ -102,7 +102,7 @@ internal sealed class CompletionBarrier : SaveChangesInterceptor
         {
             if (Interlocked.Increment(ref arrivals) == 2) 
             {
-                bothReady.TrySetResult()
+                bothReady.TrySetResult();
             }
 
             await bothReady.Task.WaitAsync(TimeSpan.FromSeconds(5), cancellationToken);
